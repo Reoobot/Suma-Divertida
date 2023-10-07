@@ -6,7 +6,15 @@ import Link from "next/link";
 export default function Instrucciones() {
   return (
     <div>
-       <div className="text-center mt-4">
+      
+      <div className="h-screen flex justify-center items-center mb-0">
+        <div className="gap-3 text-2xl">
+          <div className="">
+            <Speech />
+          </div>
+          <div className="sm:flex">
+            <ImageBuho />
+            <div className="text-center mt-4">
         {/* <Link href='/DecimalPage' className="bg-blue-900 text-white py-2 px-4 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out"> */}
         <Link href='/menuPage' className="inicio">
           Jugar
@@ -17,13 +25,6 @@ export default function Instrucciones() {
           </a>
         </Link>
       </div>
-      <div className="h-screen flex justify-center items-center mb-0">
-        <div className="gap-3 text-2xl">
-          <div className="">
-            <Speech />
-          </div>
-          <div className="">
-            <ImageBuho />
           </div>
         </div>
       </div>
