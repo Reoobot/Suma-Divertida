@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  background-image: url("/selva.gif"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  
+}
+input{
+  max-width: 100%;
+}
+
+.fuente {
+  font-family: 'Caveat', cursive;  
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+  
+  
+}
+
+.speech-bubble {
+  position: relative; 
+  background-color: #ffffff;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  max-width: 100%;
+  max-height: 100%;
+
+  text-align: center;
+  
+  margin-bottom: 0px;
+  margin-left: 20px; 
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  top : 100%; 
+  left: 5%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+.speech-bubble li {
+  opacity: 0; 
+  transform: translateY(10px); 
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.speech-bubble li.show {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+.calculadora {
+  font-size: 2rem;
+  
+}
+
+.numer1 {
+  font-size: 3rem;
+}
+.numer2{
+  margin-left: 40px;
+}
+
+/* CSS para el modal */
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+.basic{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.basic2 {
+  background-color: blue;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+  margin-top: 50px;
+} 
+.sumar {
+  background-color: blue;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.dividir {
+  background-color: blue;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+  margin-top: 10px;
+  align-items: center;
+}
+.continuar {
+  background-color: blue;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+  margin-top: 50px;
+}
+.inicio {
+  background-color: blue;
+  margin: 0 auto;
+  text-align: ;
+  align-items: center;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+  margin-top: 50px;
+}
+.home {
+  background-color: blue;
+  margin: 0 auto;
+  width: 8rem;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+ }
+.ingrese {
+  text-align: center;
+  margin-left: 45px;
+  border-top: solid;
+  font-size: 3rem;
+}
+@media (max-width: 768px) {
+  .ingrese {
+    margin-left: 20px;
+    margin-right: 35px;
+    font-size: 3rem; 
+  }
+}
+.clase {
+  background-color: blue;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+  margin-top: 50px;
+}
+.estudiar {
+  background-color: blue;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+  margin-top: 50px;
+}
+.time {
+  background-color: blue;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+
+/* Estilos adicionales según tus necesidades */
+
+
+
